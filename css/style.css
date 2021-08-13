@@ -1,0 +1,464 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s;
+}
+
+body,p,h2 {
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+}
+
+body {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+@media screen and (max-width: 670px) { */
+
+.container {
+  padding:0 17px;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.heading-wrapper {
+  height: 45px;
+  line-height: 45px;
+  z-index: 100;
+  background-color: #FADD4B;
+}
+
+.menu {
+  position: relative;
+  float: right;
+  padding-top: 13px;
+}
+
+#bar1.open {
+  margin-top: 6px;
+  transform: rotate(45deg);
+}
+
+#bar2.open {
+  opacity: 0;
+}
+
+#bar3.open {
+  margin-top: -9px;
+  transform: rotate(-45deg);
+}
+
+.flex-open {
+  display: block;
+}
+
+.menu-list {
+  display: none;
+  text-align: center;
+  background-color: rgba(0,0,0, 0.8);
+  z-index: 90;
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+
+.menu-list-text {
+  display: flex;
+  flex-flow: column;
+}
+
+.menu-list-text img{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 70px;
+}
+
+span {
+  display: block;
+  background-color: #3B3B3A;
+  width: 28px;
+  height: 2px;
+  transition: all 0.3s ease;
+}
+
+span:nth-last-child(-n+2)  {
+margin-top: 5px;
+}
+
+.top-wrapper {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/bg1.jpg");
+  background-size: 100%;
+}
+
+.top-heading {
+  position: absolute;
+  margin-top: 115%;
+  width: 62%;
+}
+
+.top-image {
+  width: 100%;
+  top: 0;
+}
+
+.illust-top-wrapper,.illust-under-wrapper{
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.illust-top,.illust-under {
+  position: relative;
+  top: -20px;
+}
+
+.illust1,.illust2 {
+  position: absolute;
+  width: 100%;
+}
+
+.illust1:first-child {
+  top: 0;
+}
+
+.illust1:nth-child(2) {
+  top: 300px;
+}
+
+.illust1:nth-child(3) {
+  top: 687px;
+}
+
+.illust1:nth-child(4) {
+  top: 1035px;
+}
+
+.illust2:first-child {
+  top: 20px;
+}
+
+.illust2:nth-child(2) {
+  top: 1055px;
+}
+
+.illust2:nth-child(3) {
+  top: 1550px;
+}
+
+.heading {
+  padding-bottom: 4px;
+  border-bottom: 1px solid #000000
+}
+
+.concept-wrapper {
+  background-color: white;
+  margin: 60px 35px 100px 35px ;
+
+}
+
+.about-wrapper {
+  margin-top: 45px;
+  padding-top: 55px;
+}
+
+.about-wrapper p {
+  padding-top: 30px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.about-heading {
+  text-align: center;
+}
+
+.jobDetail-wrapper {
+  padding-top: 50px;
+}
+
+.jobDetail-heading {
+  text-align: center;
+}
+
+.detail {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.detail h2 {
+  font-size: 16px;
+  font-weight: normal;
+  padding-top: 2px;
+}
+
+.detail p {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.app,.webSite {
+  padding-bottom: 50px;
+}
+
+.app img {
+  padding-left: 20px;
+}
+
+.plan {
+  padding-bottom: 50px;
+}
+
+.voice1-wrapper {
+  width: 100%;
+  background-image: url("../img/bg2.jpg");
+  background-size: 100%;
+  text-align: center;
+}
+
+.voice1-heading {
+  text-align: center;
+  padding-top: 75px;
+}
+
+.fukuda {
+  padding-top: 52px;
+  padding-bottom: 80px;
+}
+
+.suzuki {
+  padding-bottom: 80px;
+}
+
+.photo p {
+  padding: 17px 0 24px 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.comment {
+  position: relative;
+}
+
+.comment-triangle {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.comment h2 {
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  color: white;
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 7px 5px 5px 8px;
+}
+
+.comment h2:first-child {
+  width: 50%;
+}
+
+.comment h2:nth-child(2) {
+  width: 70%;
+}
+
+.comment p {
+  padding-top: 36px;
+  font-size: 13px;
+}
+
+.under-wrapper {
+  width: 100%;
+  background-image: url("../img/bg1.jpg");
+  background-size: 100%;
+}
+
+.voice2-heading {
+  text-align: center;
+  padding-top: 70px;
+}
+
+.personReview-1 {
+  padding-top: 70px;
+  display: flex;
+}
+
+.review {
+  position: relative;
+}
+
+.review-text-left {
+  position: absolute;
+  left: 16px;
+}
+
+.review-text-left h2 {
+  width: 90%;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.review-text-left p {
+  width: 85%;
+  font-size: 13px;
+  padding-top: 18px;
+}
+
+.review img {
+  width: 100%;
+}
+
+.person {
+  width: 50%;
+  text-align: center;
+  z-index: 90;
+}
+
+.person img{
+  margin-top: 95px;
+  width: 70%;
+}
+
+.person h3 {
+  padding-top: 6px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.person p {
+  font-size: 12px;
+}
+
+.personReview-2 {
+  padding-top: 30px;
+  display: flex;
+}
+
+.review-text-right {
+  position: absolute;
+  left: 32px;
+}
+
+.review-text-right h2 {
+  width: 90%;
+  font-size: 16px;
+  padding-top: 20px;
+}
+
+.review-text-right p {
+  width: 85%;
+  font-size: 13px;
+  padding-top: 18px;
+}
+
+.personReview-3 {
+  padding-top: 30px;
+  display: flex;
+}
+
+.recruit-wrapper {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.recruit-heading {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.jobRecruit {
+  padding-top: 70px;
+  padding-bottom: 170px;
+}
+
+.job {
+  position: relative;
+  background-color: white;
+  border: solid 1px #000000;
+  border-radius: 14px;
+}
+
+.job img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 15px;
+}
+
+.job:nth-child(2) {
+  margin-top: 25px;
+}
+
+
+.jobRecruit-heading {
+  width: 75%;
+  display: flex;
+  padding-bottom: 8px;
+  margin: 15px 0 8px 15px;
+  border-bottom:  solid 1px #707070;
+}
+
+.jobRecruit-heading h2{
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.jobRecruit-heading p{
+  font-size: 12px;
+  font-weight: bold;
+  color: #E89F11;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+.jobRecruit-text {
+  margin-left: 15px;
+}
+
+.jobRecruit-text h3{
+  padding-top: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.jobRecruit-text p {
+  padding-bottom: 17px;
+  font-size: 13px;
+}
+
+footer {
+  width: 100%;
+  background-color: #EFEFEF;
+}
+
+footer p {
+  text-align: center;
+  padding: 36px 0 36px 0;
+  font-size: 13px;
+}
+
+
+
+/* } */
+
+
+
+
+
+
